@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow daily briefing personal AI agent</title>
+  <desc id="desc">Cron menjalankan Hermes, Hermes membaca email dan kalender, menyaring prioritas, lalu mengirim briefing ke Telegram.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      text { font-family: Inter, Segoe UI, Arial, sans-serif; }
+      .title { fill: #172033; font-size: 28px; font-weight: 700; }
+      .node-title { fill: #172033; font-size: 18px; font-weight: 700; }
+      .node-copy { fill: #526078; font-size: 14px; }
+      .step { fill: #2563eb; font-size: 13px; font-weight: 700; }
+      .arrow { stroke: #2563eb; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="460" fill="#f8fafc"/>
+  <text x="70" y="70" class="title">Workflow: briefing pagi yang benar-benar berguna</text>
+  <text x="70" y="102" class="node-copy">Bukan laporan panjang. Hanya hal yang perlu dilihat sebelum mulai kerja.</text>
+
+  <g transform="translate(70 175)">
+    <rect width="200" height="160" rx="16" fill="#e8efff" stroke="#9bb8ff"/>
+    <text x="28" y="38" class="step">01 · TERJADWAL</text>
+    <text x="28" y="77" class="node-title">Cron</text>
+    <text x="28" y="106" class="node-copy">07:00 setiap pagi</text>
+    <text x="28" y="130" class="node-copy">memulai satu job</text>
+  </g>
+  <path d="M270 255 H342" class="arrow"/>
+
+  <g transform="translate(360 175)">
+    <rect width="200" height="160" rx="16" fill="#eafaf1" stroke="#8fd2a7"/>
+    <text x="28" y="38" class="step">02 · AMBIL DATA</text>
+    <text x="28" y="77" class="node-title">Hermes</text>
+    <text x="28" y="106" class="node-copy">email + kalender</text>
+    <text x="28" y="130" class="node-copy">+ task yang tertunda</text>
+  </g>
+  <path d="M560 255 H632" class="arrow"/>
+
+  <g transform="translate(650 175)">
+    <rect width="200" height="160" rx="16" fill="#fff6e5" stroke="#f0c56b"/>
+    <text x="28" y="38" class="step">03 · PILIH</text>
+    <text x="28" y="77" class="node-title">Prioritas</text>
+    <text x="28" y="106" class="node-copy">buang noise</text>
+    <text x="28" y="130" class="node-copy">simpan yang mendesak</text>
+  </g>
+  <path d="M850 255 H922" class="arrow"/>
+
+  <g transform="translate(940 175)">
+    <rect width="200" height="160" rx="16" fill="#f3edff" stroke="#c6a9f4"/>
+    <text x="28" y="38" class="step">04 · KIRIM</text>
+    <text x="28" y="77" class="node-title">Telegram</text>
+    <text x="28" y="106" class="node-copy">briefing tiga baris</text>
+    <text x="28" y="130" class="node-copy">siap dibaca</text>
+  </g>
+</svg>
